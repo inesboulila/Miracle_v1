@@ -24,7 +24,7 @@ st.set_page_config(
 # ── Load model bundle ─────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    return joblib.load('random_forest_microrna_model.pkl')
+    return joblib.load('rf_mirna_model_v1.pkl')
 
 try:
     bundle       = load_model()
